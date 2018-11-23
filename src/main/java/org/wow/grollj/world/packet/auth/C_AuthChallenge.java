@@ -1,8 +1,10 @@
-package org.wow.grollj.world.packet;
+package org.wow.grollj.world.packet.auth;
 
 import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.lang3.ArrayUtils;
 import org.bouncycastle.crypto.StreamCipher;
+import org.wow.grollj.world.packet.CPacket;
+import org.wow.grollj.world.packet.WorldOpcodes;
 
 import java.nio.ByteBuffer;
 

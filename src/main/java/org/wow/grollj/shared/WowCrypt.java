@@ -13,7 +13,7 @@ import org.wow.grollj.auth.AuthSession;
 import org.wow.grollj.auth.messages.C_AuthLogonProof;
 import org.wow.grollj.auth.messages.S_AuthLogonChallenge;
 import org.wow.grollj.world.WorldSession;
-import org.wow.grollj.world.packet.S_AuthChallenge;
+import org.wow.grollj.world.packet.auth.S_AuthChallenge;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;

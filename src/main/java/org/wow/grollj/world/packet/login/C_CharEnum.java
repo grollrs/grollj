@@ -1,6 +1,7 @@
-package org.wow.grollj.world.packet;
+package org.wow.grollj.world.packet.login;
 
 import org.bouncycastle.crypto.StreamCipher;
+import org.wow.grollj.world.packet.CPacket;
 
 public class C_CharEnum implements CPacket {
     @Override

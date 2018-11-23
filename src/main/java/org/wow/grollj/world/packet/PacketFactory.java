@@ -1,6 +1,10 @@
 package org.wow.grollj.world.packet;
 
 import io.netty.buffer.ByteBuf;
+import org.wow.grollj.world.packet.auth.S_AuthChallenge;
+import org.wow.grollj.world.packet.auth.S_AuthResponse;
+import org.wow.grollj.world.packet.login.S_CharEnum;
+import org.wow.grollj.world.packet.misc.S_UnknownPacket;
 
 import java.util.HashMap;
 

@@ -1,10 +1,12 @@
-package org.wow.grollj.world.packet;
+package org.wow.grollj.world.packet.auth;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import org.apache.commons.lang3.ArrayUtils;
 import org.wow.grollj.shared.WowCrypt;
 import org.wow.grollj.world.WorldSession;
+import org.wow.grollj.world.packet.SPacket;
+import org.wow.grollj.world.packet.SPacketProducer;
 
 public class S_AuthChallenge implements SPacket {
 

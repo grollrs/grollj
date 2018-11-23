@@ -1,11 +1,10 @@
-package org.wow.grollj.world.packet;
+package org.wow.grollj.world.packet.login;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
-import org.wow.grollj.auth.AuthSession;
-import org.wow.grollj.auth.messages.SMessage;
 import org.wow.grollj.world.WorldSession;
-import sun.nio.cs.UTF_8;
+import org.wow.grollj.world.packet.SPacket;
+import org.wow.grollj.world.packet.SPacketProducer;
 
 import java.nio.charset.Charset;
 
