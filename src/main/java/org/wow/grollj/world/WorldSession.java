@@ -13,8 +13,15 @@ public class WorldSession {
     byte[] seed;
     boolean encryptionActive;
 
+    World world = new World();
 
+    public World getWorld() {
+        return world;
+    }
 
+    public void setWorld(World world) {
+        this.world = world;
+    }
 
     public StreamCipher getEnc() {
         return enc;

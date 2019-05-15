@@ -2,6 +2,7 @@ package org.wow.grollj.world.packet.login;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
+import org.wow.grollj.world.Character;
 import org.wow.grollj.world.WorldSession;
 import org.wow.grollj.world.packet.SPacket;
 import org.wow.grollj.world.packet.SPacketProducer;
@@ -37,6 +38,7 @@ public class S_CharEnum implements SPacket {
     @Override
     public void handle(WorldSession session, ChannelHandlerContext ctx) {
         System.out.println("Handling char enum");
+        session.getWorld().setCharacter(new Character(guid,name,lvl,zone,map,x,y,z));
         // join world
         ctx.writeAndFlush(new C_PlayerLogin());
     }

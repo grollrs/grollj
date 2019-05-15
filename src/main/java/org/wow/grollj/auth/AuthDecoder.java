@@ -23,18 +23,18 @@ public class AuthDecoder extends ByteToMessageDecoder {
 
         //read command byte
         byte command = in.readByte();
-        logger.debug("[N] Decoding " + command);
+        //logger.debug("[N] Decoding " + command);
         // rest reader so we will read the opcode again in the factory
         in.resetReaderIndex();
 
 
         SMessage msg =AuthMessageFactory.produce(command, in);
         if (msg==null){
-            logger.debug("[N] Not enough bytes for OC:" + command);
+            //logger.debug("[N] Not enough bytes for OC:" + command);
             return;
         }
         else{
-            logger.debug("[N] Yielding " + msg);
+            //logger.debug("[N] Yielding " + msg);
             out.add(msg);
         }
     }

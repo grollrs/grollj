@@ -89,11 +89,11 @@ public class WorldDecoder extends ByteToMessageDecoder {
         // we only read data when the whole packet is available and we do not re-read the header, so we
         //  do not need in.markReaderIndex(); here
 
-        System.out.println("Header: [OC]: " +oc +" [len]: "+len );
+        //System.out.println("Header: [OC]: " +oc +" [len]: "+len );
 
         // we wait until the whole packet has arrived, so the packet handlers do not have to implement buffer logic
         if(in.readableBytes()<len){
-            logger.debug("[N] Not enough bytes for OC:" + oc + ", readable: "+ in.readableBytes() + " len:" + len);
+            //logger.debug("[N] Not enough bytes for OC:" + oc + ", readable: "+ in.readableBytes() + " len:" + len);
             isBufferHot=true;
             headerBuffer = ArrayUtils.clone(header);
             // since nothing is read, we don't need in.resetReaderIndex();

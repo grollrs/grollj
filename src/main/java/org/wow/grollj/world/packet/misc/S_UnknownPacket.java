@@ -7,6 +7,6 @@ import org.wow.grollj.world.packet.SPacket;
 public class S_UnknownPacket implements SPacket {
     @Override
     public void handle(WorldSession session, ChannelHandlerContext ctx) {
-        System.out.println("Handling unknown packet");
+        //System.out.println("Handling unknown packet");
     }
 }

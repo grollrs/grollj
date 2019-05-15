@@ -41,7 +41,7 @@ public class WorldSocket {
             @Override
             public void initChannel(SocketChannel ch) throws Exception {
 
-                ch.pipeline().addFirst(new LoggingHandler());
+                //ch.pipeline().addFirst(new LoggingHandler());
 
                 ch.pipeline().addLast(new WorldEncoder(world));
                 ch.pipeline().addLast(new WorldDecoder(world));
