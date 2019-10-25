@@ -1,4 +1,7 @@
-# grollj (a trinity client)
+# [Abandoned] grollj (a trinity client)
+
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 A PoC of a trinity client written with Netty
 
 ## What is this
